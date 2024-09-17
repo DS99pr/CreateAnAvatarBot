@@ -15,7 +15,7 @@ bot = commands.Bot(
 async def on_ready(): # we use an asynchronous "on_ready" function, it is executed when the bot is ready
    print("bot is ready") # sending a log, you can do anything else here, but if you want to do something related to the Discord API, use "await" before the command
 
-@bot.command(name="avatar") # creating a command called "ping", it will be called like this: "?ping"
+@bot.command(name="avatar") # creating a command called "avatar", it will be called like this: "?avatar"
 async def pingCommand(ctx: commands.Context, member: discord.Member = None): # for the explanation of "commands.Context" check the documentation discord.py, or go to my repository called "CreateAPrefixCommandBot"
    # object "discord. Member" is an instance that accepts a user's mention or ID. We give "= None" here to make this argument optional.
    if member: # checking if the user has given the user
