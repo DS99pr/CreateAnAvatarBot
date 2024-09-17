@@ -17,7 +17,7 @@ async def on_ready(): # we use an asynchronous "on_ready" function, it is execut
 
 @bot.command(name="avatar") # creating a command called "avatar", it will be called like this: "?avatar"
 async def pingCommand(ctx: commands.Context, member: discord.Member = None): # for the explanation of "commands.Context" check the documentation discord.py, or go to my repository called "CreateAPrefixCommandBot"
-   # object "discord. Member" is an instance that accepts a user's mention or ID. We give "= None" here to make this argument optional.
+   # object "discord.Member" is an instance that accepts a user's mention or ID. We give "= None" here to make this argument optional.
    if member: # checking if the user has given the user
       await ctx.send(f"{member.avatar}") # sending a URL (or a photo, depending on Discord and the server) of the user's avatar, but the bot will probably just send the photo.
    else:
