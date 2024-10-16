@@ -24,4 +24,4 @@ async def avatarCommand(ctx: commands.Context, member: discord.Member = None): #
       await ctx.send(f"{ctx.author.avatar}") # object "ctx.author" refers to the caller of the command, and object "avatar" returns the URL of the avatar. In this case, the bot sends the author's avatar.
    # after executing the "?avatar @user" command, the bot responds with avatar of user, if it has "message_content" intentions assigned.
 
-@bot.run("token") # replace the "token" with your token from the "Bot" tab in the Discord Developers Portal, and give it here (as a string), remember not to share it with ANYONE
+bot.run("token") # replace the "token" with your token from the "Bot" tab in the Discord Developers Portal, and give it here (as a string), remember not to share it with ANYONE
